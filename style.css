@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +18,13 @@ body {
 }
 
 
-
 .img-1 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/nature.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/nature.jpg);
     height: 90vh;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
 }
 
@@ -39,42 +42,95 @@ h1 {
 }
 
 .img-2 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/beach.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/beach.jpg);
     height: 90vh;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
 }
 
 .img-3 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/mountains.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/mountains.jpg);
     height: 90vh;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
 }
 
 .img-4 {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/forest.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/forest.jpg);
     height: 90vh;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
 }
 
-
-.tit {
-
+.txt {
+    color: #111;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 60px;
+    list-style-type: none;
 }
 
-.txt {
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 80px 120px;
+.txt li::before {
+    content: "    ~    ";
+    color: brown;
+    font-size: 25px;
+}
+
+.creditos {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    margin: 60px auto 30px;
+    max-width: 800px;
+    line-height: 1.8;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.creditos a {
+    color: #4da3ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.creditos a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+#btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s;
+    z-index: 1000;
+}
+
+#btn-topo img {
+    width: 24px;
+    height: 24px;
+}
+
+#btn-topo:hover {
+    background: hsl(214, 87%, 18%);
 }
